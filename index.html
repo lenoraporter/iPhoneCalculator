@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>iPhone X Calculator</title>
+</head>
+<body class="bg-black">
+  <main>
+    <article class="phone">
+      <header class="text-white text-xs font-sans m-2">
+        <div class="left absolute">
+          <p>9:41</p>
+        </div>
+        <div class="right float-right">
+          <i class="fas fa-signal mr-1"></i>
+          <i class="fas fa-wifi mr-1"></i>
+          <i class="fas fa-battery-full mr-1"></i>
+        </div>
+      </header>
+      <section class="calculator m-2">
+        <input class="bg-black text-white outline-none border-none text-right font-thin font-sans text-6xl h-32 w-full mb-2" maxlength="6" id="display" value="0"/>
+        <div class="buttons">
+          <div class="flex flex-row">
+            <button class="btn w-1/4 bg-gray-600 rounded-full h-16 mr-2 mb-2">AC</button>
+            <button class="btn w-1/4 bg-gray-600 rounded-full h-16 mr-2 mb-2">+/-</button>
+            <button class="btn w-1/4 bg-gray-600 rounded-full h-16 mr-2 mb-2">%</button>
+            <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">÷</button>
+          </div>
+          <div class="flex flex-row">
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">7</button>
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">8</button>
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">9</button>
+            <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">x</button>
+          </div>
+          <div class="flex flex-row">
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">4</button>
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">5</button>
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">6</button>
+            <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">-</button>
+          </div>
+          <div class="flex flex-row">
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">1</button>
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">2</button>
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">3</button>
+            <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">+</button>
+          </div>
+          <div class="flex flex-row">
+            <button class="btn w-1/2 bg-gray-800 text-white text-left pl-6 rounded-full h-16 mr-2 mb-2">0</button>
+            <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">.</button>
+            <button class="btn w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">=</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <button class="home bg-gray-800 w-24 h-1 block m-auto rounded mb-2 mt-8"></button>
+      </footer>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

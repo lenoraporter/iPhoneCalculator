@@ -1,0 +1,21 @@
+.phone {
+  width: 275px;
+  margin: 100px auto;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  border-radius: 30px;
+  box-shadow: 3px 2px #5e6266,
+              8px 5px 3px #000,
+              -2px 5px 3px #ccd3db,
+              -4px -2px 3px #333,
+              4px -2px 3px #ccc;
+}
+
+.active {
+  background-color: white;
+  color: #ed8936;
+}
+
+.btn:active {
+  background: rgba(255,255,255, 0.5);
+}
